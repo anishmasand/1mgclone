@@ -2,6 +2,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:tata_1mg/utils/routes.dart';
 import 'package:tata_1mg/view/login_page.dart';
+import 'package:tata_1mg/view/product-list.dart';
 
 import 'otp-verification.dart';
 
@@ -23,8 +24,8 @@ class MyApp extends StatelessWidget {
       ),
       //initialRoute: "/home",
       routes: {
-        "/": (context) => HomePage(), //either run this or the upper Homepage(),
-        // "/": (context) => OtpVerification(),
+        // "/": (context) => HomePage(), //either run this or the upper Homepage(),
+        "/": (context) => ProductList(),
         MyRoutes.loginRoute: (context) => LoginPage(),
         MyRoutes.otpRoute: (context) => OtpVerification(),
       }, // uses map : string and context, map : a key and value
